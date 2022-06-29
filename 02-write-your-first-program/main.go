@@ -30,5 +30,4 @@ import (
 func main() {
 	fmt.Println("Bahadir")
 	fmt.Println("Yigit")
-	// ?
 }
