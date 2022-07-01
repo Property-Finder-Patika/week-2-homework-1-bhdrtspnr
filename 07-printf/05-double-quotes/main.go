@@ -8,15 +8,22 @@
 
 package main
 
+import "fmt"
+
 // ---------------------------------------------------------
-// EXERCISE: Naked Expression
+// EXERCISE: Double Quotes
 //
-//  1. Try to type just "Hello" on a line.
-//  2. Do not use Println
-//  3. Observe the error
+//  Print "hello world" with double-quotes using Printf
+//  (As you see here)
 //
+// NOTE
+//  Output "shouldn't" be just: hello world
+//
+// EXPECTED OUTPUT
+//  "hello world"
 // ---------------------------------------------------------
 
 func main() {
-	Hello //undeclared name error .\main.go:21:2: undefined: Hello
+	hello := "hello world"
+	fmt.Printf("%q\n", hello)
 }

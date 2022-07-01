@@ -8,15 +8,18 @@
 
 package main
 
+import "fmt"
+
 // ---------------------------------------------------------
-// EXERCISE: Naked Expression
+// EXERCISE: Convert and Fix
 //
-//  1. Try to type just "Hello" on a line.
-//  2. Do not use Println
-//  3. Observe the error
+//  Fix the code by using the conversion expression.
 //
+// EXPECTED OUTPUT
+//  15.5
 // ---------------------------------------------------------
 
 func main() {
-	Hello //undeclared name error .\main.go:21:2: undefined: Hello
+	a, b := 10., 5.5
+	fmt.Println(a + b)
 }

@@ -8,15 +8,18 @@
 
 package main
 
+import "fmt"
+
 // ---------------------------------------------------------
-// EXERCISE: Naked Expression
+// EXERCISE: Fix the Float
 //
-//  1. Try to type just "Hello" on a line.
-//  2. Do not use Println
-//  3. Observe the error
+//  Fix the program to print 2.5 instead of 2
 //
+// EXPECTED OUTPUT
+//  2.5
 // ---------------------------------------------------------
 
 func main() {
-	Hello //undeclared name error .\main.go:21:2: undefined: Hello
+	var x float64 = 5 / 2
+	fmt.Println(x)
 }

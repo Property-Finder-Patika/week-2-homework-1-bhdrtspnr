@@ -8,15 +8,30 @@
 
 package main
 
+import "fmt"
+
 // ---------------------------------------------------------
-// EXERCISE: Naked Expression
+// EXERCISE: Simplify the Assignments
 //
-//  1. Try to type just "Hello" on a line.
-//  2. Do not use Println
-//  3. Observe the error
+//  Simplify the code (refactor)
 //
+// RESTRICTION
+//  Use only the incdec and assignment operations
+//
+// EXPECTED OUTPUT
+//  3
 // ---------------------------------------------------------
 
 func main() {
-	Hello //undeclared name error .\main.go:21:2: undefined: Hello
+	width, height := 10, 2
+
+	width++
+	width += height
+	width--
+	width -= height
+	width *= 20
+	width /= 25
+	width %= 5
+
+	fmt.Println(width)
 }

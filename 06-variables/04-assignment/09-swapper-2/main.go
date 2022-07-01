@@ -8,15 +8,28 @@
 
 package main
 
+import "fmt"
+
 // ---------------------------------------------------------
-// EXERCISE: Naked Expression
+// EXERCISE: Swapper
 //
-//  1. Try to type just "Hello" on a line.
-//  2. Do not use Println
-//  3. Observe the error
+//  1. Change `color` to "orange"
+//     and `color2` to "green" at the same time
 //
+//     (use multiple-assignment)
+//
+//  2. Print the variables
+//
+// EXPECTED OUTPUT
+//  orange green
 // ---------------------------------------------------------
 
 func main() {
-	Hello //undeclared name error .\main.go:21:2: undefined: Hello
+	// UNCOMMENT THE CODE BELOW:
+
+	color, color2 := "red", "blue"
+
+	color, color2 = color2, color
+	fmt.Println(color, color2)
+	// ?
 }

@@ -8,22 +8,34 @@
 
 package main
 
+import "fmt"
+
 // ---------------------------------------------------------
-// EXERCISE: Print the Go Version
+// EXERCISE: Incdecs
 //
-//  1. Look at the runtime package documentation
-//  2. Find the func that returns the Go version
-//  3. Print the Go version by calling that func
+//  1. Increase the `counter` 5 times
+//  2. Decrease the `factor` 2 times
+//  3. Print the product of counter and factor
 //
-// HINT
-//  It's here: https://golang.org/pkg/runtime
+// RESTRICTION
+//  Use only the incdec statements
 //
 // EXPECTED OUTPUT
-//  "go1.10"
+//  -75
 // ---------------------------------------------------------
 
 func main() {
-	// PS C:\Users\BahadirHakanTaspinar\Documents\GitHub\week-2-homework-1-bhdrtspnr\04-statements-expressions-comments\04-print-go-version> go version
-	//terminal: go version
-	//output: go version go1.18.3 windows/amd64
+	// DO NOT TOUCH THIS
+	counter, factor := 45, 0.5
+
+	for i := 0; i < 5; i++ {
+		counter++
+	}
+	for i := 0; i < 2; i++ {
+		factor--
+	}
+
+	fmt.Println(float64(counter) * factor)
+	// LASTLY: REMOVE THE CODE BELOW
+	//_, _ = counter, factor
 }

@@ -8,15 +8,27 @@
 
 package main
 
+import (
+	"fmt"
+	"os"
+)
+
 // ---------------------------------------------------------
-// EXERCISE: Naked Expression
+// EXERCISE: Count the Arguments
 //
-//  1. Try to type just "Hello" on a line.
-//  2. Do not use Println
-//  3. Observe the error
+//  Print the count of the command-line arguments
 //
+// INPUT
+//  bilbo balbo bungo
+//
+// EXPECTED OUTPUT
+//  There are 3 names.
 // ---------------------------------------------------------
 
 func main() {
-	Hello //undeclared name error .\main.go:21:2: undefined: Hello
+	// UNCOMMENT & FIX THIS CODES
+	count := len(os.Args) - 1 //since first argument is the name of the file
+
+	// UNCOMMENT IT & THEN DO NOT TOUCH THIS CODE
+	fmt.Printf("There are %d names.\n", count)
 }

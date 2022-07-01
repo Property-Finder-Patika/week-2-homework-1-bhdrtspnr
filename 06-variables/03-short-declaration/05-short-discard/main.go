@@ -8,22 +8,33 @@
 
 package main
 
+import "fmt"
+
 // ---------------------------------------------------------
-// EXERCISE: Print the Go Version
+// EXERCISE: Short Discard
 //
-//  1. Look at the runtime package documentation
-//  2. Find the func that returns the Go version
-//  3. Print the Go version by calling that func
+// 	1. Short declare two bool variables
+//     (use multiple short declaration syntax)
 //
-// HINT
-//  It's here: https://golang.org/pkg/runtime
+//  2. Initialize both variables to true
+//
+//  3. Change your declaration and
+//     discard the 2nd variable's value
+//     using the blank-identifier
+//
+//  4. Print only the 1st variable
 //
 // EXPECTED OUTPUT
-//  "go1.10"
+//  true
 // ---------------------------------------------------------
 
 func main() {
-	// PS C:\Users\BahadirHakanTaspinar\Documents\GitHub\week-2-homework-1-bhdrtspnr\04-statements-expressions-comments\04-print-go-version> go version
-	//terminal: go version
-	//output: go version go1.18.3 windows/amd64
+	// ADD YOUR DECLARATIONS HERE
+	//
+	on, off := true, false
+
+	_ = off
+	// THEN UNCOMMENT THE CODE BELOW
+
+	fmt.Println(on)
 }

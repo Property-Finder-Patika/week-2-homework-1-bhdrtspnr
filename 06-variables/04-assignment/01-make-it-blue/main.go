@@ -8,15 +8,26 @@
 
 package main
 
+import "fmt"
+
 // ---------------------------------------------------------
-// EXERCISE: Naked Expression
+// EXERCISE: Make It Blue
 //
-//  1. Try to type just "Hello" on a line.
-//  2. Do not use Println
-//  3. Observe the error
+//  1. Change `color` variable's value to "blue"
 //
+//  2. Print it
+//
+// EXPECTED OUTPUT
+//  blue
 // ---------------------------------------------------------
 
 func main() {
-	Hello //undeclared name error .\main.go:21:2: undefined: Hello
+	// UNCOMMENT THE CODE BELOW:
+
+	color := "green"
+
+	color = "blue"
+	// ADD YOUR CODE BELOW:
+
+	fmt.Println(color)
 }

@@ -8,15 +8,33 @@
 
 package main
 
+import "fmt"
+
 // ---------------------------------------------------------
-// EXERCISE: Naked Expression
+// EXERCISE: Multi Assign
 //
-//  1. Try to type just "Hello" on a line.
-//  2. Do not use Println
-//  3. Observe the error
+//  1. Assign "go" to `lang` variable
+//     and assign 2 to `version` variable
+//     using a multiple assignment statement
 //
+//  2. Print the variables
+//
+// EXPECTED OUTPUT
+//  go version 2
 // ---------------------------------------------------------
 
 func main() {
-	Hello //undeclared name error .\main.go:21:2: undefined: Hello
+	// DO NOT TOUCH THIS
+	var (
+		lang    string
+		version int
+	)
+
+	lang = "go"
+	version = 2
+
+	// ADD YOUR CODE BELOW
+
+	// DO NOT TOUCH THIS
+	fmt.Println(lang, "version", version)
 }

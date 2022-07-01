@@ -8,15 +8,26 @@
 
 package main
 
+import (
+	"fmt"
+	"os"
+)
+
 // ---------------------------------------------------------
-// EXERCISE: Naked Expression
+// EXERCISE: Print the Path
 //
-//  1. Try to type just "Hello" on a line.
-//  2. Do not use Println
-//  3. Observe the error
+//  Print the path of the running program by getting it
+//  from `os.Args` variable.
 //
+// HINT
+//  Use `go build` to build your program.
+//  Then run it using the compiled executable program file.
+//
+// EXPECTED OUTPUT SHOULD INCLUDE THIS
+//  myprogram
 // ---------------------------------------------------------
 
 func main() {
-	Hello //undeclared name error .\main.go:21:2: undefined: Hello
+	fmt.Println(os.Args[0])
+
 }

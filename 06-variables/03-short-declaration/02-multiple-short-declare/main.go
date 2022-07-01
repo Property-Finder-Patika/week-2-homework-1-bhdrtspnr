@@ -8,15 +8,23 @@
 
 package main
 
+import "fmt"
+
 // ---------------------------------------------------------
-// EXERCISE: Naked Expression
+// EXERCISE: Multiple Short Declare
 //
-//  1. Try to type just "Hello" on a line.
-//  2. Do not use Println
-//  3. Observe the error
+//  Declare two variables using multiple short declaration
 //
+// EXPECTED OUTPUT
+//  14 true
 // ---------------------------------------------------------
 
 func main() {
-	Hello //undeclared name error .\main.go:21:2: undefined: Hello
+	// ADD YOUR DECLARATIONS HERE
+	//
+	a, b := 14, true
+
+	// THEN UNCOMMENT THE CODE BELOW
+
+	fmt.Println(a, b)
 }

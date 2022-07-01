@@ -8,15 +8,30 @@
 
 package main
 
+import (
+	"fmt"
+	"strings"
+)
+
 // ---------------------------------------------------------
-// EXERCISE: Naked Expression
+// EXERCISE: Trim It
 //
-//  1. Try to type just "Hello" on a line.
-//  2. Do not use Println
-//  3. Observe the error
+//  1. Look at the documentation of strings package
+//  2. Find a function that trims the spaces from
+//     the given string
+//  3. Trim the text variable and print it
 //
+// EXPECTED OUTPUT
+//  The weather looks good.
+//  I should go and play.
 // ---------------------------------------------------------
 
 func main() {
-	Hello //undeclared name error .\main.go:21:2: undefined: Hello
+	msg := `
+	
+	The weather looks good.
+I should go and play.
+	`
+
+	fmt.Println(strings.TrimSpace(msg))
 }

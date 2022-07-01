@@ -8,15 +8,24 @@
 
 package main
 
+import "fmt"
+
 // ---------------------------------------------------------
-// EXERCISE: Naked Expression
+// EXERCISE: Short With Expression
 //
-//  1. Try to type just "Hello" on a line.
-//  2. Do not use Println
-//  3. Observe the error
+// 	1. Short declare a variable named `sum`
 //
+//  2. Initialize it with an expression by adding 27 and 3.5
+//
+// EXPECTED OUTPUT
+//  30.5
 // ---------------------------------------------------------
 
 func main() {
-	Hello //undeclared name error .\main.go:21:2: undefined: Hello
+	// ADD YOUR DECLARATION HERE
+	//
+	sum := 27 + 3.5
+
+	// THEN UNCOMMENT THE CODE BELOW
+	fmt.Println(sum)
 }

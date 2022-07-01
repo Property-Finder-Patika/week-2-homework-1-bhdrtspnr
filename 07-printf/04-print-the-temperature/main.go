@@ -8,15 +8,22 @@
 
 package main
 
+import "fmt"
+
 // ---------------------------------------------------------
-// EXERCISE: Naked Expression
+// EXERCISE: Print the Temperature
 //
-//  1. Try to type just "Hello" on a line.
-//  2. Do not use Println
-//  3. Observe the error
+//  Print the current temperature in your area using Printf
 //
+// NOTE
+//  Do not use %v verb
+//  Output "shouldn't" be like 29.500000
+//
+// EXPECTED OUTPUT
+//  Temperature is 29.5 degrees.
 // ---------------------------------------------------------
 
 func main() {
-	Hello //undeclared name error .\main.go:21:2: undefined: Hello
+	temperature := 31.5
+	fmt.Printf("Temperature is %.1f degrees.\n", temperature)
 }

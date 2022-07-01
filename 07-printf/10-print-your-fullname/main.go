@@ -8,22 +8,32 @@
 
 package main
 
+import "fmt"
+
 // ---------------------------------------------------------
-// EXERCISE: Print the Go Version
+// EXERCISE: Print Your Fullname
 //
-//  1. Look at the runtime package documentation
-//  2. Find the func that returns the Go version
-//  3. Print the Go version by calling that func
+//  1. Get your name and lastname from the command-line
+//  2. Print them using Printf
 //
-// HINT
-//  It's here: https://golang.org/pkg/runtime
+// EXAMPLE INPUT
+//  Inanc Gumus
 //
 // EXPECTED OUTPUT
-//  "go1.10"
+//  Your name is Inanc and your lastname is Gumus.
 // ---------------------------------------------------------
 
 func main() {
-	// PS C:\Users\BahadirHakanTaspinar\Documents\GitHub\week-2-homework-1-bhdrtspnr\04-statements-expressions-comments\04-print-go-version> go version
-	//terminal: go version
-	//output: go version go1.18.3 windows/amd64
+	var (
+		name    string
+		surname string
+	)
+
+	fmt.Println("Please enter your name: ")
+	fmt.Scanln(&name)
+	fmt.Println("Please enter your surname: ")
+	fmt.Scanln(&surname)
+
+	fmt.Printf("You name is %v and your surname is %v.\n", name, surname)
+
 }

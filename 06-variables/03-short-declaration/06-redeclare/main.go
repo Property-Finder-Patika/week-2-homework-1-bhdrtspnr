@@ -8,15 +8,29 @@
 
 package main
 
+import "fmt"
+
 // ---------------------------------------------------------
-// EXERCISE: Naked Expression
+// EXERCISE: Redeclare
 //
-//  1. Try to type just "Hello" on a line.
-//  2. Do not use Println
-//  3. Observe the error
+// 	1. Short declare two int variables: age and yourAge
+//     (use multiple short declaration syntax)
 //
+//  2. Short declare a new float variable: ratio
+//     And, change the 'age' variable to 42
+//
+//     (! You should use redeclaration)
+//
+//  4. Print all the variables
+//
+// EXPECTED OUTPUT
+//  42, 20, 3.14
 // ---------------------------------------------------------
 
 func main() {
-	Hello //undeclared name error .\main.go:21:2: undefined: Hello
+	// ADD YOUR DECLARATIONS HERE
+	age, yourAge := 15, 25
+	age, ratio := 20, 3.14
+
+	fmt.Println(age, yourAge, ratio)
 }

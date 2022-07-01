@@ -8,15 +8,20 @@
 
 package main
 
+import "fmt"
+
 // ---------------------------------------------------------
-// EXERCISE: Naked Expression
+// EXERCISE: Print Your Age
 //
-//  1. Try to type just "Hello" on a line.
-//  2. Do not use Println
-//  3. Observe the error
+//  Print your age using Printf
 //
+// EXPECTED OUTPUT
+//  I'm 30 years old.
+//
+// NOTE
+//  You should change 30 to your age, of course.
 // ---------------------------------------------------------
 
 func main() {
-	Hello //undeclared name error .\main.go:21:2: undefined: Hello
+	fmt.Printf("I'm %d years old.\n", 30)
 }

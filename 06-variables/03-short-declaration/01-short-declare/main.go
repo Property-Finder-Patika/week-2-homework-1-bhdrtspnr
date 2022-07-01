@@ -8,15 +8,32 @@
 
 package main
 
+import "fmt"
+
 // ---------------------------------------------------------
-// EXERCISE: Naked Expression
+// EXERCISE: Short Declare
 //
-//  1. Try to type just "Hello" on a line.
-//  2. Do not use Println
-//  3. Observe the error
+//  Declare and then print four variables using
+//  the short declaration statement.
 //
+// EXPECTED OUTPUT
+//  i: 314 f: 3.14 s: Hello b: true
 // ---------------------------------------------------------
 
 func main() {
-	Hello //undeclared name error .\main.go:21:2: undefined: Hello
+	// ADD YOUR DECLARATIONS HERE
+	//
+	i := 314
+	f := 3.14
+	s := "Hello"
+	b := true
+
+	//THEN UNCOMMENT THE CODE BELOW
+
+	fmt.Println(
+		"i:", i,
+		"f:", f,
+		"s:", s,
+		"b:", b,
+	)
 }

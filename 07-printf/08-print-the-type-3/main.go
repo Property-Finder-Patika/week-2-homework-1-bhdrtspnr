@@ -8,15 +8,17 @@
 
 package main
 
+import "fmt"
+
 // ---------------------------------------------------------
-// EXERCISE: Naked Expression
+// EXERCISE: Print the Type #3
 //
-//  1. Try to type just "Hello" on a line.
-//  2. Do not use Println
-//  3. Observe the error
+//  Print the type and value of "hello" using fmt.Printf
 //
+// EXPECTED OUTPUT
+// 	Type of hello is string
 // ---------------------------------------------------------
 
 func main() {
-	Hello //undeclared name error .\main.go:21:2: undefined: Hello
+	fmt.Printf("Type of %s is %T\n", "hello", "hello")
 }

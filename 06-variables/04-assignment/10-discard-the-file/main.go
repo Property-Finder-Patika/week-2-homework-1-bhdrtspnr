@@ -8,15 +8,28 @@
 
 package main
 
+import (
+	"fmt"
+	"path"
+)
+
 // ---------------------------------------------------------
-// EXERCISE: Naked Expression
+// EXERCISE: Discard The File
 //
-//  1. Try to type just "Hello" on a line.
-//  2. Do not use Println
-//  3. Observe the error
+//  1. Print only the directory using `path.Split`
 //
+//  2. Discard the file part
+//
+// RESTRICTION
+//  Use short declaration
+//
+// EXPECTED OUTPUT
+//  secret/
 // ---------------------------------------------------------
 
 func main() {
-	Hello //undeclared name error .\main.go:21:2: undefined: Hello
+	// UNCOMMENT THE CODE BELOW:
+	dir, _ := path.Split("secret/file.txt")
+
+	fmt.Println(dir)
 }

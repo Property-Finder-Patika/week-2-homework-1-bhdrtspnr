@@ -8,15 +8,21 @@
 
 package main
 
+import "fmt"
+
 // ---------------------------------------------------------
-// EXERCISE: Naked Expression
+// EXERCISE: False Claims
 //
-//  1. Try to type just "Hello" on a line.
-//  2. Do not use Println
-//  3. Observe the error
+//  Use printf to print the expected output using a variable.
 //
+// EXPECTED OUTPUT
+//  These are false claims.
 // ---------------------------------------------------------
 
 func main() {
-	Hello //undeclared name error .\main.go:21:2: undefined: Hello
+	// UNCOMMENT THE FOLLOWING CODE
+	// AND DO NOT CHANGE IT AFTERWARDS
+	tf := false
+
+	fmt.Printf("These are %v claims. \n", tf)
 }

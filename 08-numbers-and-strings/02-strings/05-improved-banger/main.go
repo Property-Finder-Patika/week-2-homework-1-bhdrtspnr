@@ -8,15 +8,31 @@
 
 package main
 
+import (
+	"fmt"
+	"os"
+	"strings"
+	"unicode/utf8"
+)
+
 // ---------------------------------------------------------
-// EXERCISE: Naked Expression
+// EXERCISE: Improved Banger
 //
-//  1. Try to type just "Hello" on a line.
-//  2. Do not use Println
-//  3. Observe the error
+//  Change the Banger program the work with Unicode
+//  characters.
 //
+// INPUT
+//  "İNANÇ"
+//
+// EXPECTED OUTPUT
+//  İNANÇ!!!!!
 // ---------------------------------------------------------
 
 func main() {
-	Hello //undeclared name error .\main.go:21:2: undefined: Hello
+	msg := os.Args[1]
+	l := utf8.RuneCountInString(msg)
+
+	s := msg + strings.Repeat("!", l)
+
+	fmt.Println(s)
 }

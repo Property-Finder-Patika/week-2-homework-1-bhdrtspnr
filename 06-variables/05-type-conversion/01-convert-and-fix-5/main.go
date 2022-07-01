@@ -8,15 +8,26 @@
 
 package main
 
+import "fmt"
+
 // ---------------------------------------------------------
-// EXERCISE: Naked Expression
+// EXERCISE: Convert and Fix #5
 //
-//  1. Try to type just "Hello" on a line.
-//  2. Do not use Println
-//  3. Observe the error
+//  Fix the code.
 //
+// HINTS
+//   maximum of int8  can be 127
+//   maximum of int16 can be 32767
+//
+// EXPECTED OUTPUT
+//  1127
 // ---------------------------------------------------------
 
 func main() {
-	Hello //undeclared name error .\main.go:21:2: undefined: Hello
+	// DO NOT TOUCH THESE VARIABLES
+	min := int32(127)
+	max := int32(1000)
+
+	// FIX THE CODE HERE
+	fmt.Println(int32(max) + min)
 }
